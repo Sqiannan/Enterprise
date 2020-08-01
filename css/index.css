@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+a,li{
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+input,button{
+    border: 0;
+    outline-style: none;
+}
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+section{
+    width: 100%;
+    height: 31px;
+    line-height: 31px;
+    font-size: 14px;
+    background: #f7f7f7;
+}
+
+.font_333{
+    color: #333;
+
+}
+.font_999{
+    color: #999;
+
+}
+.line{
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #999;
+    color: #999;
+    margin: 0 16px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+header{
+    position: relative;
+    height: 76px;
+    background: #fff;
+    /* padding: 22px 0 10px 0; */
+    font-size: 14px;
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    /* float: left; */
+    width: 255px;
+    height: 38px;
+    
+}
+/* .logo h1{
+    width: 255px;
+    height: 38px;
+   
+} */
+.logo a{
+    display: block;
+    width: 255px;
+    height: 38px;
+    font-size: 0;
+    background: url(../images/logo.png);
+}
+.hd_menu ul{
+    float: right;
+    margin-top: 18px;
+}
+.hd_menu ul li{
+    float: left;
+    margin-left: 20px;
+}
+.hd_menu ul li:nth-child(3){
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background-color: #999;
+    color: #999;
+    margin: 0 2px 0 22px ;
+    margin-top: 2px;
+    vertical-align: bottom;
+}
+/* 导航条开始 */
+nav{
+    position: relative;
+    height: 42px;
+    line-height: 42px;
+    color: #000;
+}
+.dropdown{
+    float: left;
+    width: 230px;
+}
+.dropdown dt{
+    height: 42px;
+    text-align: center;
+    background: #3492FD;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dropdown ul{
+    height: 430px;
+    font-size: 16px;
+    background: rgba(0,0,0,.8);
+    border-radius: 0  0 10px 10px;
+}
+/* .dropdown dd{
+    display: none;
+} */
+.dropdown dd{
+    position: absolute;
+    width: 230px;
+    top: 42px;
+    left: 0;
+    z-index: 10;
+}
+.dropdown dd li{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.dropdown dd li::after{
+    position: absolute;
+    font-family: 'icomoon';
+    content: '\e920';
+    top: 0;
+    right: 40px;
+}
+.nav_menu li{
+    float: left;
+    margin-left: 40px;
+    
+}
+.list_icon::after{
+    font-family: 'icomoon';
+    content: '\e91e';
+    margin-left: 2px;
+    top: 10px;
+}
+.search{
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 243px;
+    height: 32px;
+    border: 1px solid #999;
+    border-radius: 32px;
+}
+.search input{
+    float: left;
+    margin-left: 16px;
+    margin-top: 5px;
+    width: 156px;
+    height: 20px;
+    vertical-align: middle;
+}
+.search::placeholder{
+    color:#999
+}
+.search button{
+    float: left;
+    margin-top: 5px;
+    width: 60px;
+    height: 20px;
+    background: url(../images/search.png) no-repeat center;
+    cursor: pointer;
+}
+/* 导航条结束 */
+/* banner开始 */
+.photo{
+    width: 100%;
+    height: 320px;
+    /* margin-top: -2px; */
+    background:rgb(56,63,143);
+    overflow: hidden;
+}
+.photo .img{
+    position: relative;
+    margin: 0 auto;
+    width: 1190px;
+    height: 320px;
+}
+/* banner结束 */
+/* 内容区开始 */
+.content{
+    height: auto;
+   
+    background: #f0f0f0;
+    border: 1px solid transparent;
+}
+.content .cont_bd{
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.content .quan{
+    height: 101px;
+    /* width: 1190px; */
+    margin-top: 8px;
+    margin-left: 238px;
+    padding-top: 30px;
+    padding-bottom: 26px;
+    overflow: hidden;
+    
+}
+.contbg{
+    background: #fff;
+    border-radius: 10px;
+}
+.quan ul li{
+    float: left;
+    width: 238px;
+}
+.quan ul li img{
+    float: left;
+    margin-left: 30px;
+}
+.quan .font{
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.quan p:nth-child(2){
+    margin-top: 18px;
+}
+/* 公开课和新闻开始 */
+.open{
+    margin-top: 30px;
+    overflow: hidden;
+    font-size: 12px;
+}
+.open_course{
+    position: relative;
+    float: left;
+    padding-top: 20px;
+    padding-left: 50px;
+    height: 256px;
+    width: 690px;
+}
+.jt_icon{
+    position: absolute;
+    right: 0;
+    top: 117px;
+}
+.open_course .course1{
+    float: left;
+    margin-right: 22px;
+    width: 287px;
+    height: 199px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 2px 6px  rgba(0,0,0,.2);
+}
+
+.course1>img{
+    height: 120px;
+    width: 100%;
+}
+.course1 .wz{
+    height: 76px;
+    width: 100%;
+    /* position: relative; */
+    padding: 10px 20px 8px 18px;
+   
+    
+}
+.course1 .wz p:nth-child(1){
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    float: left;
+}
+.course1 .wz p:nth-child(2){
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    float: right;
+}
+.course1 .wz p:nth-child(3){
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+    float: left;
+    margin-top: 20px;
+}
+.course1 .wz p:nth-child(4){
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    float: right;
+    margin-top: 20px;
+}
+.course1 .wz p img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.news{
+    float: left;
+    margin-left: 10px;
+    width: 490px;
+    height: 256px;
+}
+.news .bxg_news{
+    float: left;
+    height: 220px;
+    width: 122px;
+    margin:22px 36px 18px 50px;
+}
+.news .bxg_gg{
+    float: left;
+    height: 220px;
+    width: 200px;
+    margin-top:22px;
+}
+.news .bxg_gg dt{
+    width: 65px;
+    color: #3492fd;
+    border-bottom: 2px solid #3492fd;
+    
+}
+.news .bxg_gg dd{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    
+}
+.news .bxg_gg dd::before{
+    /* font-family: 'icomoon';
+    content: '\e908';
+    font-size: 1px;
+    color:#3492fd; */
+    display: inline-block;
+    content: '';
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:#3492fd;
+}
+/* 公开课和新闻结束 */
+/* 精品微课开始 */
+.course_bd{
+    margin-top: 23px;
+    width: 1190px;
+    height: 36px;
+    line-height: 36px;
+    overflow: hidden;
+}
+.course_bd ul li{
+    float: left;
+    margin-right: 22px;
+    font-size: 12px;
+}
+.course{
+    
+    font-size: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.course .cour_bd{
+    font-size: 16px;
+}
+.course .tj1>img{
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+}
+.tj1:nth-child(1){
+    margin: 0;
+}
+.tj1{
+    float: left;
+    width: 290px;
+    height: 254px;
+    margin-left: 9px;
+    
+    border-radius: 10px;
+    overflow: hidden;
+}
+.tj1 .pro{
+    padding: 12px 12px 0 11px;
+}
+.pro p:nth-child(2){
+    margin-top: 10px;
+}
+.pro span{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.pro span:last-child{
+    margin-left: 94px;
+}
+.pro span:last-child img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.font_red{
+    color:#ff0000;
+    font-size: 14px;
+}
+.font_sec{
+    margin-left: 24px;
+}
+/* 精品微课结束 */
+/* 内容区结束 */
+/* 底部开始 */
+footer{
+    width: 100%;
+    height: 294px;
+    padding-top: 51px;
+    
+    background: #333;
+    color: #ccc;
+    font-size: 14px;
+}
+.lj{
+    overflow: hidden;
+    height: 160px;
+    border-bottom: 1px solid rgb(57,62,70);
+}
+footer h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.yun{
+    float: left;
+    width: 422px;
+    
+}
+.yun p{
+    /* height: 24px; */
+    line-height: 24px;
+}
+.focus{
+    float: left;
+    width: 137px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+.focus a:last-child{
+    margin-left: 15px;
+}
+.link{
+    float: left;
+    width: 515px;
+}
+.link ul li{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 24px;
+    
+}
+
+.link ul li a{
+    color: #ccc;
+}
+.bottom{
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 83px;
+}
+.bottom ul{
+    width: 1190px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+    margin-bottom: 20px;
+    /* height: 16px; */
+}
+.bottom ul li{
+    display: inline-block;
+    /* float: left; */
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* height: 14px; */
+    /* padding-top: 20px; */
+    color: #ccc;
+    border-right: 1px solid #ccc;
+    /* overflow: hidden; */
+}
+.bottom p{
+    text-align: center;
+}
+/* 底部结束 */
